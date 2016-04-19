@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MasterDetail.Business
 {
-    public class Class1
+    public class Order
     {
+        public int ID { get; set; }
+        public int OrderNumber { get; set; }
+        public string CustomerName { get; set; }
     }
 }
