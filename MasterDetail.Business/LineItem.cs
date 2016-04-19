@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MasterDetail.Business
 {
-    class LineItem
+    public class LineItem
     {
         public int ID { get; set; }
         public int Quantity { get; set; }
