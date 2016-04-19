@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Orders">
+            <DataGrid>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="*" Header="ID"/>
+                    <DataGridTextColumn Width="*" Header="Order Number"/>
+                    <DataGridTextColumn Width="*"  Header="Customer Name"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+        <GroupBox Header="Line Items" Grid.Row="1">
+            <DataGrid>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="*" Header="ID"/>
+                    <DataGridTextColumn Width="*" Header="Quantity"/>
+                    <DataGridTextColumn Width="*"  Header="Part Number"/>
+                    <DataGridTextColumn Width="*"  Header="Cost"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
     </Grid>
 </Window>

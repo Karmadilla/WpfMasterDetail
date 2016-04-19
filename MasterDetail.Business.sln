@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterDetail.Business", "Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterDetail.UI", "MasterDetail.UI\MasterDetail.UI.csproj", "{075D9DC5-4925-4836-B6C0-C895E21C2A9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonMvvm", "CommonMvvm\CommonMvvm.csproj", "{63E2152B-B5F4-45B1-AA5D-CE938959E046}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{075D9DC5-4925-4836-B6C0-C895E21C2A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{075D9DC5-4925-4836-B6C0-C895E21C2A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{075D9DC5-4925-4836-B6C0-C895E21C2A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E2152B-B5F4-45B1-AA5D-CE938959E046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E2152B-B5F4-45B1-AA5D-CE938959E046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E2152B-B5F4-45B1-AA5D-CE938959E046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E2152B-B5F4-45B1-AA5D-CE938959E046}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
