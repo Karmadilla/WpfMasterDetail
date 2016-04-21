@@ -5,28 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MasterDetail.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="{Binding WindowTitle}" Height="350" Width="525">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <GroupBox Header="Orders">
-            <DataGrid>
+            <DataGrid ItemsSource="{Binding Orders}" AutoGenerateColumns="False" SelectedItem="{Binding SelectedOrder, Mode=TwoWay}">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Width="*" Header="ID"/>
-                    <DataGridTextColumn Width="*" Header="Order Number"/>
-                    <DataGridTextColumn Width="*"  Header="Customer Name"/>
+                    <DataGridTextColumn Width="*" Header="ID" Binding="{Binding ID}"/>
+                    <DataGridTextColumn Width="*" Header="Order Number" Binding="{Binding OrderNumber}"/>
+                    <DataGridTextColumn Width="*"  Header="Customer Name" Binding="{Binding CustomerName}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>
         <GroupBox Header="Line Items" Grid.Row="1">
-            <DataGrid>
+            <DataGrid ItemsSource="{Binding SelectedOrder.LineItems}" AutoGenerateColumns="False">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Width="*" Header="ID"/>
-                    <DataGridTextColumn Width="*" Header="Quantity"/>
-                    <DataGridTextColumn Width="*"  Header="Part Number"/>
-                    <DataGridTextColumn Width="*"  Header="Cost"/>
+                    <DataGridTextColumn Width="*" Header="ID" Binding="{Binding ID}"/>
+                    <DataGridTextColumn Width="*"  Header="Quantity" Binding="{Binding Quantity}"/>
+                    <DataGridTextColumn Width="*" Header="Part Number" Binding="{Binding PartNumber}"/>
+                    <DataGridTextColumn Width="*"  Header="Cost" Binding="{Binding Cost}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>

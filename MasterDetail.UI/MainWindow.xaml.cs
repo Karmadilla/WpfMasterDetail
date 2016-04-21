@@ -23,6 +23,7 @@ namespace MasterDetail.UI
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowViewModel();
         }
     }
 }

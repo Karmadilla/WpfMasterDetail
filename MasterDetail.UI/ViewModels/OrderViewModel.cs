@@ -11,7 +11,12 @@ namespace MasterDetail.UI.ViewModels
 {
     public class OrderViewModel : ViewModelBase
     {
-        private Order order;
+        private Order order = new Order();
+
+        public OrderViewModel()
+        {
+
+        }
 
         public int ID
         {
@@ -52,10 +57,6 @@ namespace MasterDetail.UI.ViewModels
             }
         }
 
-        public ObservableCollection<LineItem> LineItems
-        {
-            get { return this.order.LineItems; }
-            set { this.order.LineItems = value; }
-        }
+        public ObservableCollection<LineItem> LineItems { get; set; } = new ObservableCollection<LineItem>();
     }
 }
