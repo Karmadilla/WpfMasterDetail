@@ -57,6 +57,6 @@ namespace MasterDetail.UI.ViewModels
             }
         }
 
-        public ObservableCollection<LineItem> LineItems { get; set; } = new ObservableCollection<LineItem>();
+        public ObservableCollection<LineItemViewModel> LineItems { get; set; } = new ObservableCollection<LineItemViewModel>();
     }
 }

@@ -12,7 +12,7 @@ namespace MasterDetail.UI.ViewModels
 {
     public class LineItemViewModel : ViewModelBase
     {
-        private LineItem lineItem;
+        private LineItem lineItem = new LineItem();
 
         public int ID
         {
