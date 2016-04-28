@@ -100,7 +100,7 @@ namespace MasterDetail.UI
 
         private void ExecuteLineItemDetails(LineItemViewModel obj)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

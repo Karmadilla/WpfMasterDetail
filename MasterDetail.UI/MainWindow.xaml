@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <GroupBox Header="Orders">
-            <DataGrid ItemsSource="{Binding Orders}" AutoGenerateColumns="False" SelectedItem="{Binding SelectedOrder, Mode=TwoWay}">
+            <DataGrid ItemsSource="{Binding Orders}" AutoGenerateColumns="False" SelectedItem="{Binding SelectedOrder}">
                 <DataGrid.Columns>
                     <DataGridTextColumn Width="*" Header="ID" Binding="{Binding ID}"/>
                     <DataGridTextColumn Width="*" Header="Order Number" Binding="{Binding OrderNumber}"/>
@@ -22,7 +22,7 @@
             </DataGrid>
         </GroupBox>
         <GroupBox Header="Line Items" Grid.Row="1">
-            <DataGrid ItemsSource="{Binding SelectedOrder.LineItems}" AutoGenerateColumns="False" SelectedItem="{Binding SelectedLineItem, Mode=TwoWay}">
+            <DataGrid ItemsSource="{Binding SelectedOrder.LineItems}" AutoGenerateColumns="False" SelectedItem="{Binding SelectedLineItem}">
                 <DataGrid.Columns>
                     <DataGridTextColumn Width="*" Header="ID" Binding="{Binding ID}"/>
                     <DataGridTextColumn Width="*"  Header="Quantity" Binding="{Binding Quantity}"/>
